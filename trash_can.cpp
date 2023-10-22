@@ -29,9 +29,9 @@ void loop() {
     s.write(65);
     Serial.println(s.read());
   }
-  else if(distance >= 30){
-    if(s.read() == 65){
-      for(int i = 65;i>=0;i-=4){
+  else if(distance >= 10){
+    if(s.read() == 75){
+      for(int i = 75;i>=0;i-=4){
         distance = readDistanceCM();
         if(distance <= 20)
         break;
